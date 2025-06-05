@@ -25,10 +25,9 @@ ext_modules = [
 
 
 setup(
-    name='model',
-    version='0.0.1',
-    author='Your Name',
-    author_email='you@example.com',
+    name='UF23Fieldpy',
+    version='1.0.0',
+    author='Regnier Mathias',
     description='Pybind11 wrapper for UF23Field',
     ext_modules=ext_modules,
     cmdclass={'build_ext': build_ext},
