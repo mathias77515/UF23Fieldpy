@@ -131,7 +131,7 @@ std::tuple<
 
 
 // Bind Vector3 to Python
-PYBIND11_MODULE(UF23Field, m) {
+PYBIND11_MODULE(UF23Fieldpy, m) {
   py::class_<Vector3>(m, "Vector3")
     //.def(py::init<>())
     .def(py::init<double, double, double>())
