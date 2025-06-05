@@ -11,8 +11,8 @@ class get_pybind_include(object):
 
 ext_modules = [
     Extension(
-        'UF23Field',                  # name of the module
-        ['LoopcalcUF23Field.cxx', 'UF23Field.cc'],  # your source files
+        'UF23Fieldpy',                              # name of the module
+        ['UF23Fieldpy/LoopcalcUF23Field.cxx', 'UF23Fieldpy/UF23Field.cc'],  # your source files
         include_dirs=[
             get_pybind_include(),
             # add other include dirs, e.g. current directory, or where UF23Field.h lives
@@ -33,6 +33,3 @@ setup(
     cmdclass={'build_ext': build_ext},
     zip_safe=False,
 )
-
-
-#python setup.py build_ext --inplace
